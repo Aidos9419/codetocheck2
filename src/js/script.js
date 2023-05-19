@@ -97,7 +97,7 @@
     valideForms('#consultation form');
     valideForms('#order form');
 
-    $('input[name=phone]').mask("+7 (999) 999-9999");S
+    $('input[name=phone]').mask("+7 (999) 999-9999");
 
     $('form').submit(function(e) {
       e.preventDefault();
