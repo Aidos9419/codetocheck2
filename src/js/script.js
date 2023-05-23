@@ -6,13 +6,14 @@
     controls: false,
     nav: false,
     responsive: {
+      320: {
+        controlsText: false
+      },
       640: {
         items: 1,
-        autoHeight: true
       },
       700: {
         items: 1,
-        gutter: 30,
         controlsText: false
       },
       900: {
@@ -62,7 +63,6 @@
       $(this).on('click', function() {
         $('#order .modal__descr').text($('.catalog-item__subtitle').eq(i).text());
         $('.overlay, #order').fadeIn('fast');
-
       })
     });
   
@@ -119,6 +119,24 @@
       });
       return false;
     }); 
+
+    // Smooth scroll and pageup
+
+    $(window).scroll(function() {
+      if ($(this).scrollTop() > 1600) {
+        $('.pageup').fadeIn();
+      } else {
+        $('.pageup').fadeOut();
+      }
+    });
+  
+    $("a[href^='#']").click(function(){
+      const _href = $(this).attr("href");
+      $("html, body").animate({scrollTop: $(_href).offset().top+"px"});
+      return false;
+  });
+
+  new WOW().init();
 
     });
     })(jQuery);

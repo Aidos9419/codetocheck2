@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,10 +8,11 @@
     <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/tiny-slider.css">
+    <link rel="stylesheet" href="css/animate.min.css">
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
-    <div class="promo">
+    <section id="up" class="promo">
         <div class="container">
             <header class="header">
                 <a href="#" class="header__logo">
@@ -51,7 +52,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
     <section class="advantages">
         <div class="container">
@@ -67,7 +68,7 @@
                     </div>
                 </div>
 
-                <div class="advantages__icon">
+                <div class="advantages__icon advantages__icon_animated">
                     <img src="icons/heart.png" alt="heart">
                     <div class="advantages__subheader">
                         Заботимся о здоровье
@@ -108,7 +109,7 @@
         </div>
     </section>
 
-    <section class="carousel">
+    <div class="carousel">
         <div class="container">
             <div class="carousel__inner">
                 <div>
@@ -121,10 +122,10 @@
                     <img src="img/pulsometrres/slide03.svg" alt="slide3">
                 </div>
             </div>
-            <button type="button" class="prev"><img src="icons/left.svg"></button>
-            <button type="button" class="next"><img src="icons/right.svg"></button>
+            <button type="button" class="prev"><img src="icons/leftbtn.jpg" alt="left"></button>
+            <button type="button" class="next"><img src="icons/rightbtn.jpg" alt="right"></button>
         </div>
-    </section>
+    </div>
 
     <section class="catalog">
         <div class="container">
@@ -144,14 +145,14 @@
                             <div class="catalog-item__descr">Для первых шагов в тренировках, основанных на сердечном ритме</div>
                             <a href="" class="catalog-item__link">ПОДРОБНЕЕ</a>
                         </div>
-                        <ul class="catalog-item__list">
-                            <li>Вы услышите звуковое оповещение о нужном пульсе во время тренировки;</li>
-                            <li>Вы увидите информативный графический индикатор целевых тренировочных зон пульса;</li>
-                            <li>Также Вы увидите информацию о расходе калорий за тренировку;Вы сможете посмотреть данные по 10 тренировкам.</li>
-                            <li>Вы сможете посмотреть данные по 10 тренировкам.</li>
-                            <a href="#" class="catalog-item__back">назад</a>
-                        </ul>
-                    </div>
+                            <ul class="catalog-item__list">
+                                <li>Вы услышите звуковое оповещение о нужном пульсе во время тренировки;</li>
+                                <li>Вы увидите информативный графический индикатор целевых тренировочных зон пульса;</li>
+                                <li>Также Вы увидите информацию о расходе калорий за тренировку;Вы сможете посмотреть данные по 10 тренировкам.</li>
+                                <li>Вы сможете посмотреть данные по 10 тренировкам.</li>
+                                <a href="#" class="catalog-item__back">назад</a> 
+                            </ul>                        
+                        </div>
                     <hr>
 
                     <div class="catalog-item__footer">
@@ -378,11 +379,11 @@
         </div>
     </section>
 
-    <section class="review">
+    <section class="review ">
         <div class="container">
             <h2 class="title">ОТЗЫВЫ КЛИЕНТОВ</h2>
             <div class="review__wrapper">
-                <div class="review__clients">
+                <div class="review__clients animate__animated animate__fadeInLeft wow" data-wow-duration="2s" data-wow-delay="1s">
                     <img src="img/clients/cli1.svg" alt="client1" class="review__img">
                     <div class="review__info">
                         <div class="review__header">Ирина Иванченко</div>
@@ -395,7 +396,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="review__clients">
+                <div class="review__clients animate__animated animate__fadeInLeft wow" data-wow-duration="2s" data-wow-delay="2s">
                     <img src="img/clients/cli2.png" alt="client2" class="review__img">
                     <div class="review__info">
                         <div class="review__header">Иван Сёмочкин</div>
@@ -405,7 +406,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="review__clients">
+                <div class="review__clients animate__animated animate__fadeInLeft wow" data-wow-duration="2s" data-wow-delay="3s">
                     <img src="img/clients/cli3.svg" alt="client3" class="review__img">
                     <div class="review__info">
                         <div class="review__header">Юлия Дашкина</div>
@@ -421,7 +422,7 @@
     </section>
 
     <footer class="footer">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2244.4101211519223!2d37.64197659487367!3d55.768748621383374!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54a63664af129%3A0x32043f062d12723a!2z0JzRj9GB0L3QuNGG0LrQuNC5INC_0YAt0LQsIDMg0YHRgtGA0L7QtdC90LjQtSAxLCDQnNC-0YHQutCy0LAsINCg0L7RgdGB0LjRjywgMTA3MDc4!5e0!3m2!1sru!2skz!4v1682961144960!5m2!1sru!2skz" width="100%" height="630px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2244.4101211519223!2d37.64197659487367!3d55.768748621383374!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54a63664af129%3A0x32043f062d12723a!2z0JzRj9GB0L3QuNGG0LrQuNC5INC_0YAt0LQsIDMg0YHRgtGA0L7QtdC90LjQtSAxLCDQnNC-0YHQutCy0LAsINCg0L7RgdGB0LjRjywgMTA3MDc4!5e0!3m2!1sru!2skz!4v1682961144960!5m2!1sru!2skz" allowfullscreen></iframe>
         <div class="footer__info">
             <address class="footer__addr">Москва, Мясницкий проезд, д.3с1</address>
             <a href="tel:84999228974" class="footer__phone">8 (499) 922-89-74</a>
@@ -463,13 +464,17 @@
             <div class="modal__subtitle">Спасибо за вашу заявку!</div>
             <div class="modal__descr">Наш менеджер свяжется с вами в ближайшее время!</div>
         </div>
-
     </div>
+
+    <a href="#up" class="pageup">
+        <img src="icons/pageup.svg" alt="up">
+    </a>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
     <script src="js/jquery.validate.min.js"></script>  
-    <script src="js/jquery.maskedinput.min.js"></script>  
+    <script src="js/jquery.maskedinput.min.js"></script>
+    <script src="js/wow.min.js"></script>  
     <script src="js/script.js"></script>
 </body>
 </html>
